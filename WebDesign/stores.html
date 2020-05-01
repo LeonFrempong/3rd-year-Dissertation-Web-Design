@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stock Database</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<body>
+
+	<header>
+
+		<p>Click the button to get your coordinates.</p>
+
+		<button onclick="getLocation()">Try It</button>
+		
+			<div class="row">
+				<div class="logo">
+					<img src="logoIP.jpg">
+				</div>
+				<ul class="main-nav">
+					<li ><a href="index.html"> Home </a></li>
+					<li ><a href="currentStock.html"> Current Stock </a></li>
+					<li class="active"><a href="stores.html"> Stores </a></li>
+					<li ><a href=""> About Us </a></li>
+					<li ><a href=""> Contact Us </a></li>
+
+					
+				</ul>
+				
+			</div>
+
+
+	<h2 class="storesTitle">Top UK Supermarkets</h2>
+
+
+	<div style="text-align:center">
+ 
+  <p>Click on the boxes below:</p>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:green;">
+    Tesco
+    <img src="tesco.jpeg">
+  </div>
+
+  <div class="column" onclick="openTab('b2');" style="background:blue;">
+    Sainsbury's
+  </div>
+
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+    Asda
+    <img src="Asda_logo.jpeg" width="10%">
+  </div>
+
+  <div class="column" onclick="openTab('b4');" style="background:purple;">
+    Cooperative Food 
+    <img src="coop-food.jpeg" width="10%">
+  </div>
+
+  <div class="column" onclick="openTab('b5');" style="background:black;">
+    Morrisons
+    <img src="Morrisons_Logo.jpeg" width="10%">
+  </div>
+
+  <div class="column" onclick="openTab('b6');" style="background:yellow;">
+    Lidl
+    <img src="lidl.jpeg" width="10%">
+  </div>
+
+  <div class="column" onclick="openTab('b7');" style="background:pink;">
+    Aldi
+    <img src="Aldi.jpeg" width="10%">
+  </div>
+
+  <div class="column" onclick="openTab('b8');" style="background:orange;">
+    Iceland
+    <img src="iceland logo.jpg" width="10%">
+  </div>
+
+  <div class="column" onclick="openTab('b9');" style="background:red;">
+    M&S Simply Food
+    <img src="m&s.jpeg" width="10%">
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Tesco</h2>
+  <p></p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 2</h2>
+  <p></p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 3</h2>
+  <p></p>
+</div>
+
+<div id="b4" class="containerTab" style="display:none;background:purple">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 4</h2>
+  <p></p>
+</div>
+
+
+<div id="b5" class="containerTab" style="display:none;background:black">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 5</h2>
+  <p></p>
+</div>
+
+<div id="b6" class="containerTab" style="display:none;background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 6</h2>
+  <p></p>
+</div>
+
+
+<div id="b7" class="containerTab" style="display:none;background:pink">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 7</h2>
+  <p></p>
+</div>
+
+
+<div id="b8" class="containerTab" style="display:none;background:orange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 8</h2>
+  <p></p>
+</div>
+
+<div id="b9" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 9</h2>
+  <p></p>
+</div>
+
+
+	<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+	
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
+</header>
+
+</body>
+
+</body>
+</html>

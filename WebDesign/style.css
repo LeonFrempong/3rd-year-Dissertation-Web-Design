@@ -1,0 +1,202 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pic1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: -50px;
+	margin-right: -300px;
+	font-style: bold;
+}
+
+.main-nav li
+{
+	display: inline-block;
+
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+
+.main-nav li.active a
+{
+	border: 1px solid purple;
+	border-radius: 10px;
+
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid white;
+}
+
+.logo
+{
+	width: 150px;
+	height: auto;
+	padding-top: 50px;
+	padding-right: 100px;
+	margin-left: -300px;
+}
+
+body
+{
+	font-family: monospace;
+}
+
+.row
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.hero
+{
+	position: absolute;
+	width: 1200px;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+h1
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: center;
+	margin-top: 275px;
+	padding: 10px 30px;
+	margin-left: 50px;
+}
+
+.button
+{
+	margin-top: 30px;
+	margin-left: 440px;
+}
+
+.btn
+{
+	
+	border-radius: 10px;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.btn-one
+{
+	background-color: purple;
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-two: hover
+{
+	background-color: darkorange;
+
+}
+
+.searchInstruction
+{
+	position: absolute;
+	width: 1200px;
+	margin-left: 500px;
+	margin-top: 0;
+
+}
+
+.searchBtn
+{
+	margin-left: 400px;
+	margin-top: 30px;
+}
+
+/*.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  display: grid;
+  border-radius: 5px;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}*/
+
+.storesTitle
+{
+	padding-top:60px;
+	padding-left: 500px;
+	font-size: 60px;
+	color: white;
+}
+
+/*.container h4{
+	font-family: bold;
+	font-size: 20px;
+}*/
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.column:hover {
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
+}
